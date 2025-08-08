@@ -22,7 +22,7 @@ start() ->
     end.
 
 %% ---------------------------
-%% Menu interativo
+%% interactive menu for user operations
 %% ---------------------------
 
 menu(List) ->
@@ -46,7 +46,7 @@ menu(List) ->
             io:format("Range: ~p~n", [range(List)]),
             menu(List);
         4 ->
-            start(); % reinicia
+            start(); % restart the Fibonacci sequence generation
         5 ->
             io:format("Bye!~n"),
             ok;
